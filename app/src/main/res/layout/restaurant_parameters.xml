@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/viewPhoneBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="106dp"
+        android:text="View Phone" />
+
+    <CheckBox
+        android:id="@+id/viewWebBox"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/viewPhoneBox"
+        android:layout_marginTop="183dp"
+        android:text="View Website" />
+
+    <CheckBox
+        android:id="@+id/viewCatBox"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/viewPhoneBox"
+        android:layout_marginTop="264dp"
+        android:text="View Category" />
+
+    <TextView
+        android:id="@+id/prefTitle"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="31dp"
+        android:text="Preferences"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/savePref"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/viewPhoneBox"
+        android:layout_marginBottom="251dp"
+        android:text="Save Preferences" />
+</RelativeLayout>

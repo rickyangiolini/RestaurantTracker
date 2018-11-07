@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/restaurant_phone"
+        android:layout_marginBottom="-69dp"
+        android:layout_toStartOf="@+id/restaurant_rating"
+        android:text="Name:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/restaurant_phone"
+        android:layout_alignStart="@+id/phone"
+        android:text="Phone:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/restaurant_website"
+        android:layout_alignStart="@+id/phone"
+        android:text="Website:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="257dp"
+        android:layout_toStartOf="@+id/restaurant_name"
+        android:text="Rating:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/restaurant_name"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter the name of the restaurant" />
+
+    <EditText
+        android:id="@+id/restaurant_phone"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp"
+        android:hint="Enter the phone # of the restaurant" />
+
+    <EditText
+        android:id="@+id/restaurant_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="129dp"
+        android:hint="Enter the website URL of the restaurant" />
+
+    <RatingBar
+        android:id="@+id/restaurant_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignTop="@+id/rating"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/restaurant_clear"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"
+        android:layout_marginStart="-11dp"
+        android:layout_toEndOf="@+id/restaurant_add2"
+        android:text="CLEAR" />
+
+    <Button
+        android:id="@+id/restaurant_back"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/restaurant_clear"
+        android:layout_marginStart="51dp"
+        android:text="BACK" />
+
+    <Button
+        android:id="@+id/restaurant_add2"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:text="Add" />
+
+    <Spinner
+        android:id="@+id/restaurant_category"
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/url"
+        android:entries="@array/spinnerItems" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/restaurant_category"
+        android:layout_alignStart="@+id/phone"
+        android:text="Category:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/rating"
+        android:layout_marginTop="269dp"
+        android:text="Slogan:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/restaurant_slogan"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/slogan"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="Enter the restaurant's slogan"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>

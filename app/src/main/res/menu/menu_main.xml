@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Add"
+         />
+    <item
+        android:id="@+id/Clear"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="Clear"
+        />
+
+    <item
+        android:id="@+id/Load" android:icon="@android:drawable/ic_dialog_info" android:title="Load">
+    </item>
+    <item
+        android:id="@+id/Preferences"  android:title="Preferences">
+    </item>
+
+</menu>

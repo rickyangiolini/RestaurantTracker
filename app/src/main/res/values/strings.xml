@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RestaurantTracker</string>
+    <string-array name="spinnerItems">
+        <item>American</item>
+        <item>Mexican</item>
+        <item>French</item>
+        <item>Italian</item>
+    </string-array>
+</resources>
